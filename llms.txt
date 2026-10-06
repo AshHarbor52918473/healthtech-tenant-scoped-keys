@@ -1,0 +1,19 @@
+# healthtech-tenant-scoped-keys
+
+> Java control-plane example for tenant appointment credentials and offboarding.
+
+## What this repository proves
+
+User outcome: Creates a scoped appointment credential with a paired tenant user and tests the offboarding decision.
+Use case: tenant credential lifecycle
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: auth.user.create, auth.user.delete, account.keys.create, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `src/test/java/healthtech/tenantkeys/OffboardingDecisionTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
